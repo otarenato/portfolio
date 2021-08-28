@@ -1,7 +1,38 @@
-<div class="container">
-  <div class="col">teste</div>
-  <router-outlet></router-outlet>
-</div>
+<header>
+  <div class="collapse bg-primary bg-opacity-50" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Sobre</h4>
+          <p class="text-white">Profissional com experiência em desenvolvimento front-end e design de aplicações web e mobile, utilizando HTML5, CSS3, SASS, LESS, Jquery, Javascript, Typescript e AngularJS e Angular 2+. Experiência com metodologias ágeis, atuando em equipes multidisciplinares e plurais. Conhecimento em sistemas de controle de versão, SGBD como SQL, MySQL e MongoDB.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contato</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.linkedin.com/in/renato-43854425/" target="_blank" class="text-white">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-primary bg-opacity-100 shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>RENATO OTA <small>portfolio</small></strong>
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="container">
+    <router-outlet></router-outlet>
+  </section>
+</main>
+
 
 
 
