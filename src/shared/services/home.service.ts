@@ -13,7 +13,7 @@ export class HomeService {
   constructor(private http: HttpClient) { }
 
   listJobs(): Observable<JobModel[]> {
-    return this.http.get<JobModel[]>('../../assets/data/home.json').pipe(map(res => {
+    return this.http.get<JobModel[]>('https://otarenato.github.io/portfolio/assets/data/home.json').pipe(map(res => {
       return res;
     }));
   }
