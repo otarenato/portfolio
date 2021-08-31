@@ -1,9 +1,9 @@
 <section class="py-5 text-center container">
   <div class="row py-lg-5">
     <div class="col-lg-6 col-md-8 mx-auto">
-      <h1 class="fw-light">Portfolio</h1>
+      <h1 class="fw-light">{{ homeData.home_title }}</h1>
       <p class="lead text-muted">
-        Demonstração de alguns projetos realizados em trabalho e treinamento pessoal
+        {{ homeData.home_text }}
       </p>
       <!-- <p>
         <a href="#" class="btn btn-primary my-2">Main call to action</a>
@@ -14,7 +14,7 @@
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col" *ngFor="let job of listJobs">
+        <div class="col" *ngFor="let job of homeData.portfolio_jobs">
           <div class="card shadow-sm">
             <img src="{{ _url }}assets/img/{{ job.image }}" title="" />
 

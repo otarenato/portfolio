@@ -1,26 +1,29 @@
-[
-  {
-    "item": "dashboard",
-    "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
-    "image": "dasboard.png",
-    "link": "https://otarenato.github.io/angular7-dashboard/",
-    "link_texto": "Acesse",
-    "target": "_blank"
-  },
-  {
-    "item": "dashboard",
-    "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
-    "image": "dasboard.png",
-    "link": "",
-    "link_texto": "Acesse",
-    "target": ""
-  },
-  {
-    "item": "dashboard",
-    "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
-    "image": "dasboard.png",
-    "link": "",
-    "link_texto": "Acesse",
-    "target": ""
-  }
-]
+{
+  "about_text": "Profissional com experiência em desenvolvimento front-end e design de aplicações web e mobile, utilizando HTML5, CSS3, SASS, LESS, Jquery, Javascript, Typescript e AngularJS e Angular 2+. Experiência com metodologias ágeis, atuando em equipes multidisciplinares e plurais. Conhecimento em sistemas de controle de versão, SGBD como SQL, MySQL e MongoDB.",
+  "social_media": [
+    {
+      "media": "LinkedIn",
+      "link": "https://www.linkedin.com/in/renato-43854425/"
+    }
+  ],
+  "home_title": "Portfolio",
+  "home_text": "Demonstração de alguns projetos realizados em trabalho e treinamento pessoal.",
+  "portfolio_jobs": [
+    {
+      "item": "dashboard",
+      "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
+      "image": "dashboard.png",
+      "link": "https://otarenato.github.io/angular7-dashboard/",
+      "link_texto": "Acesse",
+      "target": "_blank"
+    },
+    {
+      "item": "gerenciador de tarefas",
+      "descricao": "Projeto desenvolvido com angular 7. CRUD simples de cadastro, alteração e exclusão de tarefas.",
+      "image": "gerenciadorTarefas.png",
+      "link": "https://otarenato.github.io/angular7-gerenciador-de-tarefas",
+      "link_texto": "Acesse",
+      "target": "_blank"
+    }
+  ]
+}

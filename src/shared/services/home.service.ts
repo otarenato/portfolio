@@ -1,8 +1,8 @@
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { catchError, map, retry } from 'rxjs/operators';
-import { JobModel } from 'src/shared/models';
+import { map } from 'rxjs/operators';
+import { HomeModel } from 'src/shared/models';
 
 
 @Injectable({
@@ -18,9 +18,9 @@ export class HomeService {
     return url;
   }
 
-  listJobs(): Observable<JobModel[]> {
+  getDataHome(): Observable<HomeModel> {
     this._url = this.getDomainUrl();
-    return this.http.get<JobModel[]>(`${ this._url }assets/data/home.json`).pipe(map(res => {
+    return this.http.get<HomeModel>(`${ this._url }assets/data/home.json`).pipe(map(res => {
       return res;
     }));
   }

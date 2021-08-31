@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { JobModel } from 'src/shared/models';
+import { HomeModel } from 'src/shared/models';
 import { HomeService } from 'src/shared/services';
 
 @Component({
@@ -9,15 +9,15 @@ import { HomeService } from 'src/shared/services';
 })
 export class HomeComponent implements OnInit {
 
-  listJobs: JobModel[] = [];
+  homeData!: HomeModel;
   _url: string = '';
 
   constructor(public homeService: HomeService) { }
 
   ngOnInit(): void {
     this._url = this.homeService.getDomainUrl();
-    this.homeService.listJobs().subscribe(ret => {
-      this.listJobs = ret;
+    this.homeService.getDataHome().subscribe(ret => {
+      this.homeData = ret;
     })
   }
 
