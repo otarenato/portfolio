@@ -8,19 +8,11 @@
     "target": "_blank"
   },
   {
-    "item": "dashboard",
-    "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
+    "item": "gerenciador de tarefas",
+    "descricao": "Projeto desenvolvido com angular 7. CRUD simples de cadastro, alteração e exclusão de tarefas.",
     "image": "dasboard.png",
-    "link": "",
+    "link": "https://otarenato.github.io/angular7-gerenciador-de-tarefas",
     "link_texto": "Acesse",
-    "target": ""
-  },
-  {
-    "item": "dashboard",
-    "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
-    "image": "dasboard.png",
-    "link": "",
-    "link_texto": "Acesse",
-    "target": ""
+    "target": "_blank"
   }
 ]
