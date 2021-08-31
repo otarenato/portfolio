@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JobModel } from 'src/shared/models';
+import { HomeService } from 'src/shared/services';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  listJobs: JobModel[] = [];
+
+  constructor(public homeService: HomeService) { }
 
   ngOnInit(): void {
+    this.homeService.listJobs().subscribe(ret => {
+      this.listJobs = ret;
+    })
   }
 
 }

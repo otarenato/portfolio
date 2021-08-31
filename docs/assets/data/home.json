@@ -1,0 +1,26 @@
+[
+  {
+    "item": "dashboard",
+    "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
+    "image": "dasboard.png",
+    "link": "https://otarenato.github.io/angular7-dashboard/",
+    "link_texto": "Acesse",
+    "target": "_blank"
+  },
+  {
+    "item": "dashboard",
+    "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
+    "image": "dasboard.png",
+    "link": "",
+    "link_texto": "Acesse",
+    "target": ""
+  },
+  {
+    "item": "dashboard",
+    "descricao": "Projeto desenvolvido com angular 7, utilizando o Google charts e consumindo dados.",
+    "image": "dasboard.png",
+    "link": "",
+    "link_texto": "Acesse",
+    "target": ""
+  }
+]
