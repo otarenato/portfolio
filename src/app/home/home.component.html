@@ -16,7 +16,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col" *ngFor="let job of listJobs">
           <div class="card shadow-sm">
-            <img src="../../assets/img/{{ job.image }}" title="" />
+            <img src="{{ _url }}assets/img/{{ job.image }}" title="" />
 
             <div class="card-body">
               <p class="card-text">{{ job.descricao }}</p>

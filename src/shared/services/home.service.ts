@@ -9,11 +9,18 @@ import { JobModel } from 'src/shared/models';
   providedIn: 'root'
 })
 export class HomeService {
+  public _url: string = '';
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  getDomainUrl(): string {
+    const host = window.location.hostname;
+    const url = host === 'localhost' ? '../../' : 'https://otarenato.github.io/portfolio/';
+    return url;
+  }
 
   listJobs(): Observable<JobModel[]> {
-    return this.http.get<JobModel[]>('https://otarenato.github.io/portfolio/assets/data/home.json').pipe(map(res => {
+    this._url = this.getDomainUrl();
+    return this.http.get<JobModel[]>(`${ this._url }assets/data/home.json`).pipe(map(res => {
       return res;
     }));
   }

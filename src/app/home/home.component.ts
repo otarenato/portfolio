@@ -10,10 +10,12 @@ import { HomeService } from 'src/shared/services';
 export class HomeComponent implements OnInit {
 
   listJobs: JobModel[] = [];
+  _url: string = '';
 
   constructor(public homeService: HomeService) { }
 
   ngOnInit(): void {
+    this._url = this.homeService.getDomainUrl();
     this.homeService.listJobs().subscribe(ret => {
       this.listJobs = ret;
     })
