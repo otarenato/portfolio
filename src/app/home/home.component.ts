@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { HomeModel } from 'src/shared/models';
 import { HomeService } from 'src/shared/services';
 
@@ -20,5 +20,4 @@ export class HomeComponent implements OnInit {
       this.homeData = ret;
     })
   }
-
 }
