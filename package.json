@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "Portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy:ghdocs": "ng build --prod --output-path docs --base-href /portfolio/"
+    "deploy:ghdocs": "ng build --output-path docs --base-href /portfolio/"
   },
   "private": true,
   "dependencies": {
@@ -15,12 +15,14 @@
     "@angular/common": "~12.1.0-",
     "@angular/compiler": "~12.1.0-",
     "@angular/core": "~12.1.0-",
+    "@angular/fire": "^7.0.3",
     "@angular/forms": "~12.1.0-",
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
     "@popperjs/core": "^2.9.3",
     "bootstrap": "^5.1.0",
+    "firebase": "^9.0.1",
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
@@ -40,5 +42,10 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.2"
-  }
+  },
+  "description": "Projeto de portfolio pessoal",
+  "main": "index.js",
+  "repository": "https://github.com/otarenato/portfolio.git",
+  "author": "Renato Ota",
+  "license": "MIT"
 }

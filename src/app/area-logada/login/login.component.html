@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-4 offset-md-4">
+          <div class="login-form bg-light mt-4 p-4 border-login-form">
+              <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="row g-3">
+                  <h4>Acesso Restrito</h4>
+                  <div class="col-12" *ngIf="showMessage">
+                    <div class="alert alert-danger" role="alert">
+                      Usuário e/ou senha incorretos
+                    </div>
+                  </div>
+                  <div class="col-12">
+                      <label>Usuário</label>
+                      <input type="text" name="username" class="form-control" formControlName="user" placeholder="Usuário" [ngClass]="{ 'is-invalid': submitted && f.user.errors }" (keyup)="resetMessage($event)">
+                      <div *ngIf="submitted && f.user.errors" class="invalid-feedback">
+                        <div *ngIf="f.user.errors.required">Insira seu usuário</div>
+                      </div>
+                    </div>
+                  <div class="col-12">
+                      <label>Senha</label>
+                      <input type="password" name="password" class="form-control" formControlName="password" placeholder="Senha" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" (keyup)="resetMessage($event)">
+                      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Insira sua senha</div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                    <button class="btn btn-outline-success float-sm-start" (click)="backToHome()">Home</button>
+                  </div>
+                  <div class="col-6">
+                      <button type="submit" class="btn btn-primary float-end">Acessar</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
