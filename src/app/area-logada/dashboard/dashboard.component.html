@@ -1,1 +1,49 @@
-<p>dashboard works!</p>
+<div class="container">
+  <app-menu></app-menu>
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-body center">
+          <google-chart #chart
+            [classList]="'chart'"
+            [title]="pieChart.title"
+            [type]="pieChart.type"
+            [data]="pieChart.data"
+            [columns]="pieChart.columnNames"
+            [options]="pieChart.options"
+            >
+          </google-chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <google-chart #chart
+            [classList]="'chart'"
+            [title]="lineChart.title"
+            [type]="lineChart.type"
+            [data]="lineChart.data"
+            [columns]="lineChart.columnNames"
+            [options]="lineChart.options"
+            >
+          </google-chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-body"></div>
+        <google-chart #chart
+            [classList]="'chart'"
+            [title]="barChart.title"
+            [type]="barChart.type"
+            [data]="barChart.data"
+            [columns]="barChart.columnNames"
+            [options]="barChart.options"
+            >
+          </google-chart>
+      </div>
+    </div>
+  </div>
+</div>

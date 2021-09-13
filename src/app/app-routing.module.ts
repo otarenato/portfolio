@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [ExpenseGuard] }
 ];
 
+// , canActivate: [ExpenseGuard]
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

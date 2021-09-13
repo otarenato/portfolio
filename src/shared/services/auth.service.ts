@@ -25,6 +25,11 @@ export class AuthService {
     return of(this.isUserLoggedIn);
   }
 
+  logout(): void {
+    localStorage.removeItem('isUserLoggedIn');
+    this.router.navigate(['/login']);
+  }
+
   backToHome(): void {
     localStorage.removeItem('isUserLoggedIn');
     this.router.navigate(['/home']);

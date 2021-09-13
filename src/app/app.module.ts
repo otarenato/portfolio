@@ -6,9 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { AreaLogadaModule } from './area-logada/area-logada.module';
-
-
-
+import { SharedModule } from 'src/shared/shared.module';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,8 @@ import { AreaLogadaModule } from './area-logada/area-logada.module';
     FormsModule,
     ReactiveFormsModule,
     HomeModule,
-    AreaLogadaModule
+    AreaLogadaModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
